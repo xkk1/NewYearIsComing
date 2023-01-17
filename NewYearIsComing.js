@@ -59,6 +59,6 @@ function show_example() {
     }
 }
 example_select.addEventListener("change", show_example);
-if ((new Date()).getHours() > 16) {
+if ((new Date()).getHours() > 19 || (new Date()).getHours() < 5) {
     change_style();
 }
