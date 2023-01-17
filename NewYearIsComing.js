@@ -1,12 +1,12 @@
 var i;
 var inputs = document.getElementsByClassName("input-div");
 function change_style() {
-    if (document.getElementById("switch").innerText == "白") {
+    if (document.getElementById("switch").innerText == "亮") {
         document.getElementById("style").href = "./black.css";
-        document.getElementById("switch").innerText = "黑";
+        document.getElementById("switch").innerText = "暗";
     } else {
         document.getElementById("style").href = "./white.css";
-        document.getElementById("switch").innerText = "白";
+        document.getElementById("switch").innerText = "亮";
     }
 }
 function generate() {
