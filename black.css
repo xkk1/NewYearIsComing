@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #202020;
+}
+div#header {
+    padding: 5px;
+    max-width: 840px;
+    margin: auto;
+}
+/* 声明清除浮动的样式 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /* IE6、IE7专门清除浮动样式 */
+}
+div#example {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+select#example_select {
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 2px;
+    background-color: black;
+    border: white solid 1px;
+    color: white;
+}
+div#change_style {
+    background-color: black;
+    border: white solid 2px;
+    border-radius: 21px;
+    cursor: pointer;
+    float: right;
+}
+div#switch {
+    float: left;
+    color: black;
+    background-color: white;
+    /* border: white solid 2px; */
+    margin: 1px;
+    border-radius: 50%;
+    line-height: 16px;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    margin-right: 16px;
+}
+div.container {
+    max-width: 840px;
+    background-color: #202020;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+div.input-div,
+div#content,
+input#generate_btn {
+    color: white;
+    font-weight: 400;
+    background-color: transparent;
+    display: inline-block;
+    border: darkgray solid 1px;
+    border-radius: 5px;
+    min-width: 50px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                border-color 0.3s ease;
+}
+div.input-div:focus,
+div#content:focus {
+    font-weight: 700;
+    border: #01518a solid 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	outline:none;
+}
+div.input-div:hover,
+div#content:hover,
+input#generate_btn:hover {
+    background-color: #111;
+}
+div.btn {
+    text-align: center;
+}
+input#generate_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 2px;
+    border-width: 2px;
+    cursor: pointer;
+}
+div#content {
+    width: 100%;
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+div.footer {
+    color: gray;
+    text-align: center;
+}
+div.footer>a {
+    text-decoration: none;
+    color: gray;
+}
