@@ -14,7 +14,10 @@ function generate() {
     for (i = 0; i < inputs.length; i++) {
         content = content.replace("{"+ i + "}", inputs[i].innerHTML);
     }
-    document.getElementById("content").innerText = content;
+    document.getElementById("content").innerHTML = content.replace(/<[^>]*>/g, "");
+    // Use RegExp to remove HTML tags
+    // Replace innerText with innerHTML to make the HTML entities display properly
+
     // document.getElementById("content").select();
 }
 document.getElementById("change_style").addEventListener("click", change_style);
